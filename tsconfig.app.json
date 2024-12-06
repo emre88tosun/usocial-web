@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "Node",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": ["src/components/pages/*"],
+      "@components/*": ["src/components/*"],
+      "@customTypes/*": ["src/customTypes/*"],
+      "@queries/*": ["src/utils/queries/*"],
+      "@hooks/*": ["src/utils/hooks/*"],
+      "@contexts/*": ["src/utils/contexts/*"],
+      "@functions/*": ["src/utils/functions/*"],
+      "@api/*": ["src/api/*"],
+      "@hocs/*": ["src/components/hocs/*"],
+      "@constants/*": ["src/utils/constants/*"],
+      "@helpers/*": ["src/utils/helpers/*"],
+      "@src/*": ["./src/*", "./dist/*", ""]
+    }
+  },
+  "include": ["src"]
+}
